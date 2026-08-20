@@ -33,7 +33,7 @@
 | 最終観測 | `lastRegisteredName()`が`"Ada Lovelace"`となり、`registeredCount()`が`1`であることを別々に検証する。 |
 | 決定性 | `System.in`を使わず、固定`String`をScanner入力にし、時刻、乱数、並行実行、`sleep`、外部I/Oを使わない。 |
 | 固定状態の検証コマンド | `mvn --batch-mode clean test` |
-| バグ状態の確認コマンド | `git checkout <bug-commit>`後に`mvn --batch-mode test -Dtest=SignupConsoleParserTest` |
+| バグ状態の確認コマンド | `git checkout c1cc932`後に`mvn --batch-mode test -Dtest=SignupConsoleParserTest` |
 
 ## 仮説
 
