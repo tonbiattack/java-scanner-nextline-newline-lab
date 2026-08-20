@@ -13,6 +13,7 @@ public class SignupConsoleParser {
     public SignupOutcome register(String input) {
         try (Scanner scanner = new Scanner(input)) {
             int age = scanner.nextInt();
+            scanner.nextLine();
             String name = scanner.nextLine();
             if (name.isEmpty()) {
                 return SignupOutcome.REJECTED_EMPTY_NAME;
